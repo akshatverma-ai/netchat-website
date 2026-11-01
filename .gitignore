@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+
+# Production build output
+dist/
+dist-ssr/
+
+# Environment files, secrets & credentials
+.env
+.env.*
+!.env.example
+*.local
+*.pem
+*.key
+*.keystore
+*.jks
+google-services.json
+
+# Binary APKs and application bundles
+*.apk
+*.aab
+public/*.apk
+dist/*.apk
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Netchat Actual Android Screens</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: #EEEDFA;
+      padding: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 36px;
+      justify-content: center;
+    }
+    .screen-card-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    .screen-label {
+      font-size: 15px;
+      font-weight: 700;
+      color: #151828;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 6px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      box-shadow: 0 4px 14px rgba(120, 100, 180, 0.08);
+    }
+    /* Phone frame */
+    .phone {
+      width: 380px;
+      height: 812px;
+      background: linear-gradient(145deg, #F8F7FF 0%, #E8EEFB 50%, #E0F2FE 100%);
+      border-radius: 44px;
+      border: 7px solid #FFFFFF;
+      box-shadow: 0 24px 60px rgba(80, 60, 140, 0.18), 0 4px 16px rgba(0,0,0,0.05);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .phone::before {
+      content: '';
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      top: -60px;
+      right: -60px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(236, 72, 153, 0.28) 0%, rgba(236, 72, 153, 0) 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .phone::after {
+      content: '';
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      bottom: -60px;
+      left: -60px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(6, 182, 212, 0.25) 0%, rgba(6, 182, 212, 0) 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .phone-status-bar {
+      height: 44px;
+      padding: 10px 24px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      font-weight: 700;
+      color: #151828;
+      z-index: 10;
+      position: relative;
+    }
+    .phone-island {
+      width: 90px;
+      height: 22px;
+      background: #000000;
+      border-radius: 20px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 10px;
+    }
+    .status-icons {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .phone-body {
+      flex: 1;
+      height: calc(100% - 44px);
+      display: flex;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+    }
+    .rail {
+      width: 58px;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.65);
+      backdrop-filter: blur(20px);
+      border-right: 1px solid rgba(255, 255, 255, 0.8);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0 16px;
+      gap: 14px;
+    }
+    .rail-btn {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333A52;
+      background: transparent;
+      border: none;
+      position: relative;
+    }
+    .rail-btn.active {
+      background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
+      color: #FFFFFF;
+      box-shadow: 0 4px 14px rgba(139, 92, 246, 0.35);
+    }
+    .rail-badge {
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      min-width: 15px;
+      height: 15px;
+      border-radius: 999px;
+      background: #EC4899;
+      color: #FFF;
+      font-size: 9.5px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 3px;
+    }
+    .rail-online-dot {
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #10B981;
+      box-shadow: 0 0 6px #10B981;
+    }
+    .rail-profile {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #FF2E93 0%, #9333EA 100%);
+      border: 2px solid #FFF;
+      margin-top: auto;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFF;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .screen-content {
+      flex: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      padding: 12px 14px 16px;
+      gap: 11px;
+    }
+    .screen-content::-webkit-scrollbar { display: none; }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.85);
+      border-radius: 16px;
+      padding: 12px 14px;
+      box-shadow: 0 8px 24px rgba(120, 100, 180, 0.08);
+    }
+    .section-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: #151828;
+      letter-spacing: -0.02em;
+    }
+    .section-subtitle {
+      font-size: 12px;
+      color: #64748B;
+      margin-top: 2px;
+    }
+
+    .pill-group {
+      display: flex;
+      gap: 6px;
+      overflow: hidden;
+    }
+    .pill {
+      flex: 1;
+      text-align: center;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 6px 3px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      color: #333A52;
+      white-space: nowrap;
+    }
+    .pill.active {
+      background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
+      color: #FFF;
+      border: none;
+      box-shadow: 0 4px 12px rgba(139, 92, 246, 0.28);
+    }
+
+    .phone-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 11px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.75);
+      box-shadow: 0 4px 12px rgba(120, 100, 180, 0.04);
+    }
+    .avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #FF2E93 0%, #9333EA 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFF;
+      font-weight: 700;
+      font-size: 13px;
+      position: relative;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+    .avatar.av-sarah { background: linear-gradient(135deg, #EC4899 0%, #F43F5E 100%); }
+    .avatar.av-alex { background: linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%); }
+    .avatar.av-bliix { background: linear-gradient(135deg, #06B6D4 0%, #3B82F6 100%); }
+    .avatar.av-darian { background: linear-gradient(135deg, #10B981 0%, #059669 100%); }
+
+    .item-meta { flex: 1; min-width: 0; }
+    .item-top { display: flex; justify-content: space-between; align-items: baseline; }
+    .item-name { font-size: 13px; font-weight: 700; color: #151828; }
+    .item-time { font-size: 10px; color: #8E9BAE; }
+    .item-msg {
+      font-size: 11.5px;
+      color: #64748B;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-top: 2px;
+    }
+
+    .btn-gradient {
+      background: linear-gradient(135deg, #FF2E93 0%, #9333EA 50%, #00D2FF 100%);
+      color: #FFFFFF;
+      font-weight: 700;
+      border: none;
+      border-radius: 14px;
+      padding: 10px 16px;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 6px 18px rgba(236, 72, 153, 0.35);
+      cursor: pointer;
+    }
+
+    /* Form Fields for Nearby Internet Sharing */
+    .field-group {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .field-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #475569;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .field-input-box {
+      background: rgba(255, 255, 255, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12.5px;
+      color: #151828;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SCREEN 1: SPLASH -->
+  <div class="screen-card-wrap">
+    <div class="screen-label">1. Splash & Init</div>
+    <div class="phone" id="phone-splash">
+      <div class="phone-status-bar">
+        <span>9:41</span>
+        <div class="phone-island"></div>
+        <div class="status-icons"><span>5G</span><span>100%</span></div>
+      </div>
+      <div class="phone-body" style="flex-direction: column; align-items: center; justify-content: center; padding: 20px; text-align: center;">
+        <div style="background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(24px); border: 1px solid rgba(255, 255, 255, 0.95); border-radius: 32px; padding: 36px 20px; width: 100%; box-shadow: 0 20px 45px rgba(120, 100, 180, 0.15);">
+          <div style="width: 76px; height: 76px; margin: 0 auto 16px;">
+            <svg width="76" height="76" viewBox="0 0 34 34" fill="none">
+              <circle cx="12" cy="11" r="8" fill="#38BDF8" fill-opacity="0.95" />
+              <circle cx="21" cy="13" r="8" fill="#EC4899" fill-opacity="0.9" />
+              <circle cx="13" cy="22" r="7.5" fill="#A855F7" fill-opacity="0.9" />
+              <circle cx="22" cy="22" r="6" fill="#10B981" fill-opacity="0.95" />
+              <circle cx="17" cy="17" r="4.5" fill="#3B82F6" fill-opacity="0.85" />
+            </svg>
+          </div>
+          <h2 style="font-size: 26px; font-weight: 800; color: #151828; letter-spacing: -0.02em;">Netchat</h2>
+          <p style="font-size: 13px; color: #475569; margin: 6px 0 22px;">Messaging beyond ordinary connectivity.</p>
+          
+          <div style="background: rgba(240, 244, 255, 0.7); border: 1px solid rgba(255, 255, 255, 0.9); border-radius: 18px; padding: 12px; margin-bottom: 22px; text-align: left;">
+            <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; color: #151828;">
+              <span style="width: 8px; height: 8px; border-radius: 50%; background: #10B981; box-shadow: 0 0 6px #10B981;"></span>
+              Offline Mesh P2P Engine Active
+            </div>
+            <div style="font-size: 11px; color: #64748B; margin-top: 4px;">Curve25519 Keystore Initialized</div>
+          </div>
+
+          <button class="btn-gradient" style="width: 100%; padding: 12px; font-size: 14px;">
+            Get Started &rarr;
+          </button>
+          <div style="font-size: 11px; color: #8E9BAE; margin-top: 14px;">Zero-Knowledge &bull; Peer-to-Peer &bull; SQLite</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN 2: CHATS -->
+  <div class="screen-card-wrap">
+    <div class="screen-label">2. Chats Hub</div>
+    <div class="phone" id="phone-chats" style="background: url('/screenshots/phone_chats.png') center/cover no-repeat;">
+    </div>
+  </div>
+
+  <!-- SCREEN 3: CONVERSATION -->
+  <div class="screen-card-wrap">
+    <div class="screen-label">3. Conversation</div>
+    <div class="phone" id="phone-conversation" style="background: url('/screenshots/phone_conversation.png') center/cover no-repeat;">
+    </div>
+  </div>
+
+  <!-- SCREEN 4: GROUPS -->
+  <div class="screen-card-wrap">
+    <div class="screen-label">4. Mesh Groups</div>
+    <div class="phone" id="phone-groups" style="background: url('/screenshots/phone_groups.png') center/cover no-repeat;">
+    </div>
+  </div>
+
+  <!-- SCREEN 5: CALLS -->
+  <div class="screen-card-wrap">
+    <div class="screen-label">5. Mesh Audio Calls</div>
+    <div class="phone" id="phone-calls">
+      <div class="phone-status-bar">
+        <span>9:41</span>
+        <div class="phone-island"></div>
+        <div class="status-icons"><span>5G</span><span>100%</span></div>
+      </div>
+      <div class="phone-body">
+        <div class="rail">
+          <div style="width: 28px; height: 28px;"><svg viewBox="0 0 34 34" fill="none"><circle cx="12" cy="11" r="8" fill="#38BDF8"/><circle cx="21" cy="13" r="8" fill="#EC4899"/><circle cx="13" cy="22" r="7.5" fill="#A855F7"/><circle cx="22" cy="22" r="6" fill="#10B981"/></svg></div>
+          <button class="rail-btn"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></button>
+          <button class="rail-btn active"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></button>
+          <button class="rail-btn"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg><span class="rail-online-dot"></span></button>
+          <button class="rail-btn"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></button>
+          <div class="rail-profile">AM</div>
+        </div>
+        <div class="screen-content">
+          <div>
+            <div class="section-title">Calls &amp; Audio</div>
+            <div class="section-subtitle">Local Wi-Fi Aware Direct Signaling</div>
+          </div>
+          <div class="pill-group">
+            <div class="pill active">All Calls</div>
+            <div class="pill">Missed (1)</div>
+          </div>
+
+          <div class="phone-item">
+            <div class="avatar av-sarah">SJ</div>
+            <div class="item-meta">
+              <div class="item-top"><span class="item-name">Sarah Jenkins</span><span class="item-time">11:20 AM</span></div>
+              <div class="item-msg" style="color: #10B981;">Incoming Video (14m 22s)</div>
+            </div>
+            <span style="font-size: 16px;">📹</span>
+          </div>
+
+          <div class="phone-item">
+            <div class="avatar av-alex">AM</div>
+            <div class="item-meta">
+              <div class="item-top"><span class="item-name">Alex Marion</span><span class="item-time">Yesterday</span></div>
+              <div class="item-msg">Outgoing Audio (3m 45s)</div>
+            </div>
+            <span style="font-size: 16px;">📞</span>
+          </div>
+
+          <div class="phone-item">
+            <div class="avatar av-bliix">BM</div>
+            <div class="item-meta">
+              <div class="item-top"><span class="item-name">Bliix Minsey</span><span class="item-time">Yesterday</span></div>
+              <div class="item-msg" style="color: #EF4444;">Missed Video Call</div>
+            </div>
+            <span style="font-size: 16px; color: #EF4444;">📹</span>
+          </div>
+
+          <div class="glass-card" style="margin-top: auto; padding: 10px; font-size: 11px; color: #64748B;">
+            <strong>Signaling:</strong> Local Wi-Fi Aware Direct frame signaling logged in local SQLite. Hardware codec active in Phase 2.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN 6: NEARBY INTERNET SHARING (CORRECTED INTERFACE) -->
+  <div class="screen-card-wrap">
+    <div class="screen-label">6. Nearby Internet Sharing</div>
+    <div class="phone" id="phone-nearby">
+      <div class="phone-status-bar">
+        <span>9:41</span>
+        <div class="phone-island"></div>
+        <div class="status-icons"><span>5G</span><span>100%</span></div>
+      </div>
+      <div class="phone-body">
+        <div class="rail">
+          <div style="width: 28px; height: 28px;"><svg viewBox="0 0 34 34" fill="none"><circle cx="12" cy="11" r="8" fill="#38BDF8"/><circle cx="21" cy="13" r="8" fill="#EC4899"/><circle cx="13" cy="22" r="7.5" fill="#A855F7"/><circle cx="22" cy="22" r="6" fill="#10B981"/></svg></div>
+          <button class="rail-btn"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></button>
+          <button class="rail-btn"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></button>
+          <button class="rail-btn active"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg><span class="rail-online-dot"></span></button>
+          <button class="rail-btn"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></button>
+          <div class="rail-profile">AM</div>
+        </div>
+        <div class="screen-content">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <div>
+              <div class="section-title">Nearby Internet</div>
+              <div class="section-subtitle">P2P Hotspot Sharing</div>
+            </div>
+            <div style="font-size: 10px; font-weight: 700; background: rgba(16, 185, 129, 0.15); color: #065F46; padding: 4px 9px; border-radius: 999px;">
+              Idle &bull; Ready
+            </div>
+          </div>
+
+          <!-- Tabs: Get Internet vs Share Internet vs Connections -->
+          <div class="pill-group">
+            <div class="pill active">Get Internet</div>
+            <div class="pill">Share Hotspot</div>
+            <div class="pill">My Connections</div>
+          </div>
+
+          <!-- Get Internet Form Card -->
+          <div class="glass-card" style="display: flex; flex-direction: column; gap: 10px;">
+            <div class="field-group">
+              <label class="field-label">Provider Phone Number</label>
+              <div class="field-input-box">
+                <span style="font-weight: 700; color: #64748B;">🇮🇳 +91</span>
+                <span style="color: #151828; font-weight: 600;">98765 43210</span>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label">Sharing Password</label>
+              <div class="field-input-box">
+                <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #151828; font-weight: 700; letter-spacing: 1px;">NET-8492-71X</span>
+                <span style="margin-left: auto; color: #8E9BAE; font-size: 11px;">🔒 Encrypted</span>
+              </div>
+            </div>
+
+            <button class="btn-gradient" style="margin-top: 4px;">
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+              Connect to Internet
+            </button>
+          </div>
+
+          <!-- Hotspot Info Banner -->
+          <div class="glass-card" style="padding: 10px; font-size: 11.5px; color: #475569; border-left: 3px solid #00D2FF;">
+            <strong>Verified Hotspot Credentials:</strong> Internet is securely shared peer-to-peer using dynamic password authentication between authenticated phone numbers.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN 7: OUTBOX -->
+  <div class="screen-card-wrap">
+    <div class="screen-label">7. Offline Outbox</div>
+    <div class="phone" id="phone-outbox">
+      <div class="phone-status-bar">
+        <span>9:41</span>
+        <div class="phone-island"></div>
+        <div class="status-icons"><span>5G</span><span>100%</span></div>
+      </div>
+      <div class="phone-body">
+        <div class="rail">
+          <div style="width: 28px; height: 28px;"><svg viewBox="0 0 34 34" fill="none"><circle cx="12" cy="11" r="8" fill="#38BDF8"/><circle cx="21" cy="13" r="8" fill="#EC4899"/><circle cx="13" cy="22" r="7.5" fill="#A855F7"/><circle cx="22" cy="22" r="6" fill="#10B981"/></svg></div>
+          <button class="rail-btn"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></button>
+          <button class="rail-btn"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></button>
+          <button class="rail-btn"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg><span class="rail-online-dot"></span></button>
+          <button class="rail-btn active"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg><span class="rail-badge">1</span></button>
+          <div class="rail-profile">AM</div>
+        </div>
+        <div class="screen-content">
+          <div>
+            <div class="section-title">Offline Outbox</div>
+            <div class="section-subtitle">1 encrypted envelope staged in local SQLite</div>
+          </div>
+
+          <div class="glass-card" style="border-left: 3px solid #F59E0B;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+              <span style="font-size: 11px; font-weight: 700; color: #F59E0B; background: rgba(245, 158, 11, 0.15); padding: 3px 8px; border-radius: 999px;">Pending Peer Hop</span>
+              <span style="font-size: 10px; color: #8E9BAE;">10m ago</span>
+            </div>
+            <div style="font-size: 13px; font-weight: 700; color: #151828;">Recipient: Sarah Jenkins</div>
+            <div style="font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #64748B; margin: 4px 0 8px;">ENV-8842-BLE (128 bytes)</div>
+            <div style="font-size: 11.5px; color: #333A52; background: rgba(255, 255, 255, 0.8); padding: 8px 10px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.9);">
+              &ldquo;Meeting at the hill station mesh node at 4 PM.&rdquo;
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px; font-size: 10.5px; color: #8E9BAE;">
+              <span>TTL: 5 hops</span>
+              <span style="color: #10B981; font-weight: 600;">Auto-Bridge Enabled</span>
+            </div>
+          </div>
+
+          <button class="btn-gradient" style="margin-top: 6px;">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            Flush Queue to Internet Bridge
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN 8: SETTINGS & PRIVACY -->
+  <div class="screen-card-wrap">
+    <div class="screen-label">8. Settings &amp; Privacy</div>
+    <div class="phone" id="phone-settings">
+      <div class="phone-status-bar">
+        <span>9:41</span>
+        <div class="phone-island"></div>
+        <div class="status-icons"><span>5G</span><span>100%</span></div>
+      </div>
+      <div class="phone-body">
+        <div class="rail">
+          <div style="width: 28px; height: 28px;"><svg viewBox="0 0 34 34" fill="none"><circle cx="12" cy="11" r="8" fill="#38BDF8"/><circle cx="21" cy="13" r="8" fill="#EC4899"/><circle cx="13" cy="22" r="7.5" fill="#A855F7"/><circle cx="22" cy="22" r="6" fill="#10B981"/></svg></div>
+          <button class="rail-btn"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></button>
+          <button class="rail-btn"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></button>
+          <button class="rail-btn"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg><span class="rail-online-dot"></span></button>
+          <button class="rail-btn"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></button>
+          <div class="rail-profile" style="border-color: #EC4899; box-shadow: 0 0 8px rgba(236,72,153,0.5);">AM</div>
+        </div>
+        <div class="screen-content">
+          <div>
+            <div class="section-title">Settings &amp; Privacy</div>
+            <div class="section-subtitle">Account, cryptographic keys, and mesh radio</div>
+          </div>
+
+          <div class="glass-card" style="display: flex; gap: 12px; align-items: center;">
+            <div class="avatar av-alex" style="width: 44px; height: 44px; font-size: 15px;">AM</div>
+            <div>
+              <div style="font-size: 14px; font-weight: 800; color: #151828;">Alex Marion</div>
+              <div style="font-size: 11px; color: #64748B;">@alex_marion</div>
+              <div style="font-size: 10px; color: #10B981; font-weight: 600; margin-top: 2px;">+91 98765 43210 &bull; Verified Phone OTP</div>
+            </div>
+          </div>
+
+          <div class="glass-card" style="padding: 6px 12px;">
+            <div style="font-size: 12px; font-weight: 700; color: #151828; padding: 7px 0; border-bottom: 1px solid rgba(0,0,0,0.05); display: flex; justify-content: space-between;">
+              <span>🔑 Curve25519 Encryption Keys</span><span style="color: #10B981;">Active</span>
+            </div>
+            <div style="font-size: 12px; font-weight: 700; color: #151828; padding: 7px 0; border-bottom: 1px solid rgba(0,0,0,0.05); display: flex; justify-content: space-between;">
+              <span>📡 Bluetooth LE Advertising</span><span style="color: #10B981;">On (0.05W)</span>
+            </div>
+            <div style="font-size: 12px; font-weight: 700; color: #151828; padding: 7px 0; border-bottom: 1px solid rgba(0,0,0,0.05); display: flex; justify-content: space-between;">
+              <span>🌐 Wi-Fi Aware Direct Radio</span><span style="color: #10B981;">Enabled</span>
+            </div>
+            <div style="font-size: 12px; font-weight: 700; color: #151828; padding: 7px 0; display: flex; justify-content: space-between;">
+              <span>📦 Local SQLite Database</span><span style="color: #64748B;">2.4 MB</span>
+            </div>
+          </div>
+
+          <div style="font-size: 10px; color: #8E9BAE; text-align: center; margin-top: 2px;">
+            Netchat Android v1.0.0 &bull; com.netchat.app
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const showId = urlParams.get('id');
+    if (showId) {
+      document.querySelectorAll('.screen-card-wrap').forEach(wrap => {
+        const phone = wrap.querySelector('.phone');
+        if (phone && phone.id === showId) {
+          wrap.style.display = 'flex';
+          const label = wrap.querySelector('.screen-label');
+          if (label) label.style.display = 'none';
+          document.body.style.padding = '0';
+          document.body.style.margin = '0';
+          document.body.style.background = 'transparent';
+          document.body.style.display = 'flex';
+          document.body.style.justifyContent = 'center';
+          document.body.style.alignItems = 'center';
+          document.body.style.height = '100vh';
+          phone.style.boxShadow = 'none';
+        } else {
+          wrap.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

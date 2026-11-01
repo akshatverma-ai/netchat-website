@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <radialGradient id="cyanGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#38E1FF" />
+      <stop offset="100%" stop-color="#00B4D8" />
+    </radialGradient>
+    <radialGradient id="pinkGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FF5CA8" />
+      <stop offset="100%" stop-color="#FF2E93" />
+    </radialGradient>
+    <radialGradient id="purpleGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#C084FC" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </radialGradient>
+    <radialGradient id="greenGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#10B981" />
+    </radialGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Overlapping pastel glass fluid droplets matching Netchat App Logo -->
+  <g filter="url(#softGlow)">
+    <!-- Cyan droplet -->
+    <path d="M 38 18 C 50 18 58 26 58 38 C 58 52 44 60 36 60 C 24 60 16 50 16 38 C 16 26 26 18 38 18 Z" 
+          fill="url(#cyanGrad)" opacity="0.9" />
+    <!-- Pink / Magenta droplet -->
+    <path d="M 62 30 C 74 30 84 40 84 52 C 84 66 72 74 60 74 C 48 74 42 64 42 52 C 42 38 52 30 62 30 Z" 
+          fill="url(#pinkGrad)" opacity="0.88" />
+    <!-- Purple droplet -->
+    <path d="M 44 50 C 56 50 66 60 66 72 C 66 84 54 90 42 90 C 30 90 22 80 22 68 C 22 56 32 50 44 50 Z" 
+          fill="url(#purpleGrad)" opacity="0.85" />
+    <!-- Small vibrant green accent dot -->
+    <circle cx="70" cy="74" r="7" fill="url(#greenGrad)" />
+  </g>
+</svg>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netchat — Official Android APK Download | Off-Grid Mesh Messenger</title>
+  <meta name="description" content="Official APK download for Netchat — Decentralized Peer-to-Peer & Mesh Messenger for Android. Secure off-grid communication via BLE and Wi-Fi Aware.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+
+  <!-- 3D Fluid Ambient Background Orbs -->
+  <div class="fluid-ambient-container" aria-hidden="true">
+    <div class="ambient-orb orb-pink"></div>
+    <div class="ambient-orb orb-cyan"></div>
+    <div class="ambient-orb orb-lavender"></div>
+  </div>
+
+  <!-- STICKY GLASS HEADER -->
+  <header class="site-header">
+    <div class="header-glass-bar">
+      <a href="#hero" class="brand-link" id="brandHomeLink" aria-label="Netchat Home">
+        <svg class="brand-logo-droplet" viewBox="0 0 34 34" fill="none">
+          <circle cx="12" cy="11" r="8" fill="#38BDF8" fill-opacity="0.95" />
+          <circle cx="21" cy="13" r="8" fill="#EC4899" fill-opacity="0.9" />
+          <circle cx="13" cy="22" r="7.5" fill="#A855F7" fill-opacity="0.9" />
+          <circle cx="22" cy="22" r="6" fill="#10B981" fill-opacity="0.95" />
+          <circle cx="17" cy="17" r="4.5" fill="#3B82F6" fill-opacity="0.85" />
+        </svg>
+        <span class="brand-title">Netchat</span>
+        <span class="brand-badge">Android</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links-desktop" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link" id="navLinkHome">Home</a>
+        <a href="#showcase" class="nav-link" id="navLinkScreens">Screenshots</a>
+        <a href="#features" class="nav-link" id="navLinkFeatures">Features</a>
+        <a href="#download" class="nav-link" id="navLinkDownloadSection">Download</a>
+        <a href="#install" class="nav-link" id="navLinkInstall">How to Install</a>
+        <a href="#faq" class="nav-link" id="navLinkFaq">FAQ</a>
+      </nav>
+
+      <!-- Desktop Download Button (Arrow Icon) -->
+      <a href="/Netchat.apk" download="Netchat.apk" class="btn-download-elegant" id="headerDownloadBtn" aria-label="Download Android APK">
+        <svg class="btn-download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        <span>Download APK</span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Open navigation menu" aria-expanded="false">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-content">
+      <div class="mobile-drawer-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <svg width="28" height="28" viewBox="0 0 34 34" fill="none">
+            <circle cx="12" cy="11" r="8" fill="#38BDF8" />
+            <circle cx="21" cy="13" r="8" fill="#EC4899" />
+            <circle cx="13" cy="22" r="7.5" fill="#A855F7" />
+            <circle cx="22" cy="22" r="6" fill="#10B981" />
+          </svg>
+          <span style="font-weight: 800; font-size: 18px; color: var(--text-navy);">Netchat</span>
+        </div>
+        <button id="mobileDrawerCloseBtn" aria-label="Close menu" style="background: transparent; border: none; padding: 6px; cursor: pointer; color: var(--text-navy);">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <nav style="display: flex; flex-direction: column;">
+        <a href="#hero" class="mobile-nav-link" id="mNavLinkHome">Home</a>
+        <a href="#showcase" class="mobile-nav-link" id="mNavLinkScreens">Screenshots</a>
+        <a href="#features" class="mobile-nav-link" id="mNavLinkFeatures">Features</a>
+        <a href="#download" class="mobile-nav-link" id="mNavLinkDownloadSec">Download</a>
+        <a href="#install" class="mobile-nav-link" id="mNavLinkInstall">How to Install</a>
+        <a href="#faq" class="mobile-nav-link" id="mNavLinkFaq">FAQ</a>
+      </nav>
+
+      <a href="/Netchat.apk" download="Netchat.apk" class="btn-download-elegant" id="mobileDrawerDownloadBtn" style="justify-content: center; margin-top: 8px;">
+        <svg class="btn-download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        <span>Download Android APK</span>
+      </a>
+    </div>
+  </div>
+
+  <main class="page-container">
+
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="tagline-pill">
+            <span class="tagline-icon">✨</span>
+            <span>Messaging beyond ordinary connectivity</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Off-Grid Decentralized <br>
+            <span class="hero-gradient-text">Mesh Messenger</span>
+          </h1>
+
+          <p class="hero-description">
+            Communicate securely device-to-device with zero reliance on cellular towers or central servers. Powered by native Android Bluetooth Low Energy, Wi-Fi Aware routing, and local-first SQLite persistence.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="/Netchat.apk" download="Netchat.apk" class="btn-download-hero" id="heroDownloadBtn">
+              <svg class="btn-download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span id="heroDownloadBtnText">Download APK</span>
+            </a>
+
+            <a href="#install" class="btn-secondary-guide" id="heroHowToInstallBtn">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+              <span>How to Install</span>
+            </a>
+          </div>
+
+          <div class="hero-spec-chips">
+            <div class="spec-chip">
+              <span class="spec-chip-dot"></span>
+              <span id="heroVerChip">v1.0.0 (21.2 MB)</span>
+            </div>
+            <div class="spec-chip">
+              <span class="spec-chip-dot" style="background: #EC4899;"></span>
+              <span>Android 8.0+</span>
+            </div>
+            <div class="spec-chip">
+              <span class="spec-chip-dot" style="background: #00D2FF;"></span>
+              <span>100% Local SQLite</span>
+            </div>
+            <div class="spec-chip">
+              <span class="spec-chip-dot" style="background: #10B981;"></span>
+              <span>Firebase Phone OTP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right: Real App Phone Preview -->
+        <div class="hero-phone-preview">
+          <div class="phone-mockup-frame">
+            <img src="/screenshots/phone_conversation.png" alt="Netchat Conversation Screen Preview" class="phone-mockup-img" loading="eager">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. AUTOMATIC SCREEN SHOWCASE (NEAR TOP OF PAGE) -->
+    <section class="showcase-section" id="showcase">
+      <div class="showcase-header">
+        <div class="section-badge">Live Application Showcase</div>
+        <h2 class="showcase-title">Explore Actual Netchat Screens</h2>
+        <p class="showcase-subtitle">
+          Continuous carousel showcasing actual Android application screens. Moves automatically from right to left; click any screen to inspect in high resolution.
+        </p>
+      </div>
+
+      <!-- Horizontal Marquee Track -->
+      <div class="marquee-wrapper" id="marqueeWrapper" aria-label="Continuous screen showcase">
+        <div class="marquee-track" id="marqueeTrack">
+          <!-- Dynamically populated from appConfig.screens in main.js -->
+        </div>
+      </div>
+
+      <!-- Marquee Controls Notice -->
+      <div class="marquee-controls-bar">
+        <div class="marquee-control-pill">
+          <span class="status-pulse-dot"></span>
+          <span>Hover to pause &bull; Swipe on touch &bull; Click to inspect</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. VERIFIED CORE FEATURES SECTION -->
+    <section class="features-section" id="features">
+      <div style="text-align: center; max-width: 680px; margin: 0 auto 36px;">
+        <div class="section-badge" style="background: rgba(16, 185, 129, 0.12); color: #059669; border-color: rgba(16, 185, 129, 0.25);">
+          Source-Code Verified
+        </div>
+        <h2 style="font-size: 34px; font-weight: 800; color: var(--text-navy); letter-spacing: -0.02em;">
+          Verified Core Features
+        </h2>
+        <p style="font-size: 15px; color: var(--text-navy-secondary); margin-top: 6px;">
+          Audited directly from native Android Kotlin and Jetpack Compose source code.
+        </p>
+      </div>
+
+      <div class="features-grid" id="featuresContainer">
+        <!-- Rendered from appConfig.features in main.js -->
+      </div>
+    </section>
+
+    <!-- 4. CLEAN & PREMIUM DOWNLOAD SECTION -->
+    <section class="download-section" id="download">
+      <div class="download-glass-card-clean">
+        <div class="section-badge" style="background: rgba(16, 185, 129, 0.12); color: #059669; border-color: rgba(16, 185, 129, 0.25);">
+          Official Android Release
+        </div>
+        <h2 class="download-title">Download Netchat APK</h2>
+        <p class="download-subtitle">
+          Direct native Android APK compiled for arm64-v8a, armeabi-v7a, and x86_64 devices. Free, open, and zero-telemetry.
+        </p>
+
+        <!-- Status message container (only populated if release is not ready) -->
+        <div id="releaseStatusContainer"></div>
+
+        <!-- One large, stylish gradient button -->
+        <a href="/Netchat.apk" download="Netchat.apk" class="btn-download-hero" id="mainDownloadBtn" aria-label="Download Netchat APK">
+          <svg class="btn-download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span id="mainDownloadBtnText">Download APK</span>
+        </a>
+
+        <!-- Small verified app information -->
+        <div class="download-meta-chips">
+          <div class="meta-chip">
+            <span class="meta-chip-label">Version:</span>
+            <span class="meta-chip-val" id="metaVersion">v1.0.0</span>
+          </div>
+          <div class="meta-chip-sep">•</div>
+          <div class="meta-chip">
+            <span class="meta-chip-label">Size:</span>
+            <span class="meta-chip-val" id="metaSize">21.2 MB</span>
+          </div>
+          <div class="meta-chip-sep">•</div>
+          <div class="meta-chip">
+            <span class="meta-chip-label">Requires:</span>
+            <span class="meta-chip-val" id="metaMinAndroid">Android 8.0+</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. INSTALLATION SECTION (STEP-BY-STEP SIMPLE ICONS) -->
+    <section class="installation-section" id="install">
+      <div style="text-align: center; max-width: 640px; margin: 0 auto 28px;">
+        <div class="section-badge">Simple Setup</div>
+        <h2 style="font-size: 32px; font-weight: 800; color: var(--text-navy);">Android Sideloading Guide</h2>
+        <p style="font-size: 15px; color: var(--text-navy-secondary); margin-top: 6px;">
+          Direct installation takes under 60 seconds. No Google Play Account required.
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-header">
+            <span class="step-num-badge">STEP 01</span>
+            <div class="step-icon-wrap">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+            </div>
+          </div>
+          <div class="step-card-title">Download APK</div>
+          <div class="step-card-text">Tap the Download button above to save the <code>Netchat.apk</code> file to your device.</div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-header">
+            <span class="step-num-badge">STEP 02</span>
+            <div class="step-icon-wrap">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+            </div>
+          </div>
+          <div class="step-card-title">Open Package</div>
+          <div class="step-card-text">Open your Android notifications drawer or Files app and tap the downloaded package.</div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-header">
+            <span class="step-num-badge">STEP 03</span>
+            <div class="step-icon-wrap">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11 14 15 10"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div class="step-card-title">Allow Unknown Apps</div>
+          <div class="step-card-text">When prompted, allow &ldquo;Install Unknown Apps&rdquo; for your browser in Android Security Settings.</div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-header">
+            <span class="step-num-badge">STEP 04</span>
+            <div class="step-icon-wrap">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="2"></circle>
+                <path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49"></path>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="step-card-title">Launch &amp; Mesh</div>
+          <div class="step-card-text">Tap Install. Open Netchat and grant Bluetooth and Nearby permissions to begin communicating off-grid.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. FAQ SECTION -->
+    <section class="faq-section" id="faq">
+      <div style="text-align: center; max-width: 640px; margin: 0 auto 28px;">
+        <div class="section-badge">Got Questions?</div>
+        <h2 style="font-size: 32px; font-weight: 800; color: var(--text-navy);">Frequently Asked Questions</h2>
+        <p style="font-size: 15px; color: var(--text-navy-secondary); margin-top: 6px;">
+          Security, mesh radio physics, and sideloading details.
+        </p>
+      </div>
+
+      <div class="faq-container" id="faqContainer">
+        <!-- Rendered from config.js in main.js -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Screenshot lightbox preview">
+    <div class="lightbox-dialog" id="lightboxDialog">
+      <button class="btn-lightbox-close" id="lightboxCloseBtn" aria-label="Close modal">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="lightbox-phone-view">
+        <div class="lightbox-phone-frame">
+          <img src="" alt="App screen preview" class="lightbox-phone-img" id="lightboxPhoneImg">
+        </div>
+      </div>
+
+      <div class="lightbox-details">
+        <div class="lightbox-header">
+          <div style="display: flex; gap: 8px; align-items: center;">
+            <span class="screen-num" id="lightboxNum">01</span>
+            <span class="screen-card-badge" id="lightboxBadge">Screen</span>
+          </div>
+          <h3 class="lightbox-title" id="lightboxTitle">Screen Title</h3>
+          <p class="lightbox-caption" id="lightboxCaption">Description</p>
+        </div>
+
+        <div>
+          <div id="lightboxStatusNote" style="background: rgba(240, 244, 255, 0.75); border: 1px solid var(--border-glass); border-radius: var(--radius-md); padding: 12px; font-size: 12.5px; color: #475569; margin-top: 16px;">
+            <strong>Implementation Status:</strong> Fully Implemented in Source &bull; Native Kotlin/Compose Android Build (<code>com.netchat.app</code>)
+          </div>
+
+          <div class="lightbox-nav-buttons">
+            <button class="btn-lightbox-nav" id="lightboxPrevBtn" aria-label="Previous screenshot">&larr; Previous</button>
+            <button class="btn-lightbox-nav" id="lightboxNextBtn" aria-label="Next screenshot">Next &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="page-container footer-content">
+      <div class="footer-brand">
+        <svg width="24" height="24" viewBox="0 0 34 34" fill="none">
+          <circle cx="12" cy="11" r="8" fill="#38BDF8" />
+          <circle cx="21" cy="13" r="8" fill="#EC4899" />
+          <circle cx="13" cy="22" r="7.5" fill="#A855F7" />
+          <circle cx="22" cy="22" r="6" fill="#10B981" />
+        </svg>
+        <span>&copy; 2026 Netchat. Messaging beyond ordinary connectivity.</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="mailto:support@netchat.mesh" id="footerContactEmail">support@netchat.mesh</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notice -->
+  <div class="toast-notice" id="toastNotice" role="alert" aria-live="polite">
+    <span id="toastMsg">Notification</span>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
