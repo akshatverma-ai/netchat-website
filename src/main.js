@@ -243,6 +243,7 @@ function initDownloadLogic() {
   const heroBtn = document.getElementById('heroDownloadBtn');
   const heroBtnText = document.getElementById('heroDownloadBtnText');
   const headerBtn = document.getElementById('headerDownloadBtn');
+  const mobileDrawerBtn = document.getElementById('mobileDrawerDownloadBtn');
   const statusContainer = document.getElementById('releaseStatusContainer');
 
   const metaVersion = document.getElementById('metaVersion');
@@ -276,6 +277,10 @@ function initDownloadLogic() {
     if (headerBtn) {
       headerBtn.href = apkUrl;
       headerBtn.setAttribute('download', filename);
+    }
+    if (mobileDrawerBtn) {
+      mobileDrawerBtn.href = apkUrl;
+      mobileDrawerBtn.setAttribute('download', filename);
     }
   } else {
     // Clearly report that the official release APK is not ready
