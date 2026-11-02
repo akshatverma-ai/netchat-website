@@ -252,6 +252,8 @@ function initDownloadLogic() {
 
   if (metaVersion) metaVersion.textContent = `v${appConfig.version}`;
   if (metaSize) metaSize.textContent = appConfig.apkSizeFormatted;
+  const heroVerChip = document.getElementById('heroVerChip');
+  if (heroVerChip) heroVerChip.textContent = `v${appConfig.version} (${appConfig.apkSizeFormatted})`;
   if (metaMinAndroid) metaMinAndroid.textContent = appConfig.minAndroid;
 
   const isReady = appConfig.download?.isReleaseReady;

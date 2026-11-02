@@ -9,7 +9,7 @@ Built with Vanilla HTML/CSS and JavaScript powered by Vite, featuring a refined 
 ## Key Features
 
 - **Live Android Application Showcase**: Continuous horizontal moving marquee displaying 8 genuine Android screens (Splash & Init, Chats & Contacts, End-to-End Encrypted Chat, Mesh Groups, Calls & Signaling, Nearby Internet Sharing, Offline Outbox Queue, and Settings & Privacy) with full-resolution click-to-inspect lightbox.
-- **Direct Official APK Download**: Clean, single-click direct APK download button with verified version (`v1.0.0`), file size (`21.2 MB`), and Android requirements (`Android 8.0+`).
+- **Direct Official APK Download**: Clean, single-click direct APK download button with verified version (`v1.0.1`), file size (`14.6 MB`), and Android requirements (`Android 8.0+`).
 - **Source-Code Verified Core Features**: Truthful feature breakdown audited directly from the native Android Kotlin/Jetpack Compose codebase.
 - **Android Sideloading Guide**: Clear, 4-step sideloading walkthrough for Android 8.0 through Android 15.
 - **Interactive FAQ Accordion**: Expandable answers addressing off-grid radio networking, hotspot internet sharing, and direct APK distribution.
