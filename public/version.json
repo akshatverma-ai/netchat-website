@@ -1,11 +1,11 @@
 {
-  "versionName": "1.0.4",
-  "versionCode": 5,
+  "versionName": "1.0.5",
+  "versionCode": 6,
   "minSupportedVersionCode": 1,
   "releaseDate": "2026-11-05",
-  "apkUrl": "https://github.com/akshatverma-ai/netchat-website/releases/download/v1.0.4/Netchat.apk",
-  "apkSizeBytes": 15591547,
-  "sha256": "C7644534C9E1D19C3548B19B9F0B209DC49AE8FA036524EE44AE8B9320242003",
-  "releaseNotes": "• Official Signed Release v1.0.4\n• Integrated official Google Sign-In SDK with registered SHA-1 fingerprint\n• Streamlined pastel glassmorphism login UI with Google account chooser\n• Verified Google profile synchronization with SQLite persistence\n• Permanent in-app update system with PackageInstaller integration\n• Non-destructive SQLite schema upgrade preserving 100% of chats and contacts",
+  "apkUrl": "https://github.com/akshatverma-ai/netchat-website/releases/download/v1.0.5/Netchat.apk",
+  "apkSizeBytes": 15591540,
+  "sha256": "3E206E58F896A4A01D585DAF9CC2163B4D24BAE37715A24FA6CB997B4651D8CB",
+  "releaseNotes": "• Official Signed Release v1.0.5\n• Complete production cleanup: 100% of legacy demo contacts, mock messages, fake groups, and dummy calls purged\n• Clean empty states across all screens (No Conversations Yet, No Groups Joined, No Call History)\n• Real Gmail verification with official Google Sign-In SDK and verified identity badges\n• Spark-tier compatible secure point contact discovery by Gmail\n• Non-destructive SQLite schema v5 migration preserving all genuine user data",
   "isMandatory": false
 }
