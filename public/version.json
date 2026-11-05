@@ -1,0 +1,11 @@
+{
+  "versionName": "1.0.3",
+  "versionCode": 4,
+  "minSupportedVersionCode": 1,
+  "releaseDate": "2026-11-05",
+  "apkUrl": "https://github.com/akshatverma-ai/netchat-website/releases/download/v1.0.3/Netchat.apk",
+  "apkSizeBytes": 15586028,
+  "sha256": "AD613612E81798DCACDD93EB2B33A7B17E9DF4A533D3003215056B9510FCA552",
+  "releaseNotes": "• Official Signed Release v1.0.3\n• Permanent in-app update system with PackageInstaller integration\n• Google-based verified identity (WhatsApp model)\n• Real-time SHA-256 APK integrity & release key certificate verification\n• Non-destructive SQLite schema upgrade (v4) preserving 100% of chats\n• Purged legacy phone auth UI with visual version badge and diagnostics",
+  "isMandatory": false
+}
