@@ -1,11 +1,11 @@
 {
-  "versionName": "1.0.6",
-  "versionCode": 7,
+  "versionName": "1.0.7",
+  "versionCode": 8,
   "minSupportedVersionCode": 1,
   "releaseDate": "2026-11-11",
-  "apkUrl": "https://github.com/akshatverma-ai/netchat-website/releases/download/v1.0.6/Netchat.apk",
-  "apkSizeBytes": 15624313,
-  "sha256": "53FC4200B6D81DA1F35E0402E8601904E98AF59244C224C313E5AB0CEDC15FC8",
-  "releaseNotes": "• Official Signed Release v1.0.6\n• Real-Time Gmail Add Contact: Search & add genuine registered contacts securely via normalized Gmail lookup\n• Resilient self-registration sync: Automatic discovery record creation & repair\n• Native In-App Auto Update System: Automatic background update checks and one-tap PackageInstaller handoff\n• Settings In-App Update entry with real-time status and version information\n• Spark-tier ₹0 secure Firestore rules enforcing privacy & ownership\n• Non-destructive local SQLite persistence preserving all contacts and chat history",
+  "apkUrl": "https://github.com/akshatverma-ai/netchat-website/releases/download/v1.0.7/Netchat.apk",
+  "apkSizeBytes": 15624310,
+  "sha256": "66A21E03BF8FCBE42E239AD183B19891722E1FACD9148306F23A6F6603EDA310",
+  "releaseNotes": "• Official Signed Release v1.0.7\n• Real-Time Gmail Discovery Sync: Resilient creation and repair of /email_lookup records for all registered accounts\n• Accurate Contact Search Status: Clear distinction between missing accounts, network disconnects, and permission errors\n• Native In-App Auto Update: Smooth in-place upgrade delivering zero-data-loss enhancements\n• Spark-tier ₹0 secure Firestore rules enforcing privacy & ownership\n• Complete preservation of local SQLite contacts, messages, and Firebase authentication session",
   "isMandatory": false
 }
