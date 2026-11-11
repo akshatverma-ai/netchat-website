@@ -6,7 +6,7 @@ export const appConfig = {
   versionCode: 7,
   releaseDate: "November 11, 2026",
   apkSizeFormatted: "14.9 MB",
-  apkSizeBytes: 15624309,
+  apkSizeBytes: 15624313,
   minAndroid: "Android 8.0+ (API 26)",
   targetAndroid: "Android 15 (API 35)",
   packageName: "com.netchat.app",

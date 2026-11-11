@@ -4,8 +4,8 @@
   "minSupportedVersionCode": 1,
   "releaseDate": "2026-11-11",
   "apkUrl": "https://github.com/akshatverma-ai/netchat-website/releases/download/v1.0.6/Netchat.apk",
-  "apkSizeBytes": 15624309,
-  "sha256": "57D51CE3031EAB88AD5D15E357D4F64BA6D3E923C4DAB5762479B0954C0A5F26",
-  "releaseNotes": "• Official Signed Release v1.0.6\n• Real-Time Gmail Add Contact: Search & add genuine registered contacts securely via normalized Gmail lookup\n• Native In-App Auto Update System: Automatic background update checks and one-tap PackageInstaller handoff\n• Settings In-App Update entry with real-time status and version information\n• Spark-tier ₹0 secure Firestore rules enforcing privacy & ownership\n• Non-destructive local SQLite persistence preserving all contacts and chat history",
+  "apkSizeBytes": 15624313,
+  "sha256": "53FC4200B6D81DA1F35E0402E8601904E98AF59244C224C313E5AB0CEDC15FC8",
+  "releaseNotes": "• Official Signed Release v1.0.6\n• Real-Time Gmail Add Contact: Search & add genuine registered contacts securely via normalized Gmail lookup\n• Resilient self-registration sync: Automatic discovery record creation & repair\n• Native In-App Auto Update System: Automatic background update checks and one-tap PackageInstaller handoff\n• Settings In-App Update entry with real-time status and version information\n• Spark-tier ₹0 secure Firestore rules enforcing privacy & ownership\n• Non-destructive local SQLite persistence preserving all contacts and chat history",
   "isMandatory": false
 }
