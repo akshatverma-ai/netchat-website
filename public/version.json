@@ -1,11 +1,11 @@
 {
-  "versionName": "1.0.8",
-  "versionCode": 9,
+  "versionName": "1.0.9",
+  "versionCode": 10,
   "minSupportedVersionCode": 1,
   "releaseDate": "2026-11-12",
-  "apkUrl": "https://github.com/akshatverma-ai/netchat-website/releases/download/v1.0.8/Netchat.apk",
+  "apkUrl": "https://github.com/akshatverma-ai/netchat-website/releases/download/v1.0.9/Netchat.apk",
   "apkSizeBytes": 15690864,
-  "sha256": "C3BC0912C949EFF279FEFD660C1E28207B1323A63A758CE2C9D84EE257BDD4F7",
-  "releaseNotes": "• Official Signed Release v1.0.8\n• Sidebar Auto-Hide Update: Existing left sidebar is hidden by default for a cleaner chat view\n• Tap the Netchat logo anytime to open the sidebar\n• Sidebar automatically hides after 3 seconds\n• Preserves all existing app UI design, Gmail real-time messaging, contacts, and local SQLite data",
+  "sha256": "543952EBB506F2B29C77212999B29CA7D51F6BCFEB809590A1C29499D18526FC",
+  "releaseNotes": "• Official Signed Release v1.0.9\n• Incoming & Outgoing Message Alignment: Uses authenticated Firebase UID as the source of truth\n• Own messages appear on the RIGHT with vibrant gradient bubble\n• Messages received from peer account appear on the LEFT with avatar and frosted white bubble\n• Full alignment preservation across account switching, SQLite cache restoration, and Firestore sync\n• Preserves all existing contacts, chat history, and sidebar auto-hide behavior",
   "isMandatory": false
 }

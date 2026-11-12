@@ -2,8 +2,8 @@ export const appConfig = {
   appName: "Netchat",
   tagline: "Messaging beyond ordinary connectivity.",
   subtitle: "Decentralized Peer-to-Peer & Mesh Messenger for Android",
-  version: "1.0.8",
-  versionCode: 9,
+  version: "1.0.9",
+  versionCode: 10,
   releaseDate: "November 12, 2026",
   apkSizeFormatted: "15.0 MB",
   apkSizeBytes: 15690864,
@@ -15,7 +15,7 @@ export const appConfig = {
   download: {
     // Configurable official release download
     isReleaseReady: true,
-    apkUrl: "https://github.com/akshatverma-ai/netchat-website/releases/download/v1.0.8/Netchat.apk",
+    apkUrl: "https://github.com/akshatverma-ai/netchat-website/releases/download/v1.0.9/Netchat.apk",
     filename: "Netchat.apk",
     notReadyMessage: "The official release APK is currently being prepared. Check back shortly."
   },
