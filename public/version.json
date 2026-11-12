@@ -1,11 +1,11 @@
 {
-  "versionName": "1.0.7",
-  "versionCode": 8,
+  "versionName": "1.0.8",
+  "versionCode": 9,
   "minSupportedVersionCode": 1,
-  "releaseDate": "2026-11-11",
-  "apkUrl": "https://github.com/akshatverma-ai/netchat-website/releases/download/v1.0.7/Netchat.apk",
-  "apkSizeBytes": 15624310,
-  "sha256": "66A21E03BF8FCBE42E239AD183B19891722E1FACD9148306F23A6F6603EDA310",
-  "releaseNotes": "• Official Signed Release v1.0.7\n• Real-Time Gmail Discovery Sync: Resilient creation and repair of /email_lookup records for all registered accounts\n• Accurate Contact Search Status: Clear distinction between missing accounts, network disconnects, and permission errors\n• Native In-App Auto Update: Smooth in-place upgrade delivering zero-data-loss enhancements\n• Spark-tier ₹0 secure Firestore rules enforcing privacy & ownership\n• Complete preservation of local SQLite contacts, messages, and Firebase authentication session",
+  "releaseDate": "2026-11-12",
+  "apkUrl": "https://github.com/akshatverma-ai/netchat-website/releases/download/v1.0.8/Netchat.apk",
+  "apkSizeBytes": 15690864,
+  "sha256": "C3BC0912C949EFF279FEFD660C1E28207B1323A63A758CE2C9D84EE257BDD4F7",
+  "releaseNotes": "• Official Signed Release v1.0.8\n• Sidebar Auto-Hide Update: Existing left sidebar is hidden by default for a cleaner chat view\n• Tap the Netchat logo anytime to open the sidebar\n• Sidebar automatically hides after 3 seconds\n• Preserves all existing app UI design, Gmail real-time messaging, contacts, and local SQLite data",
   "isMandatory": false
 }
