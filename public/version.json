@@ -4,8 +4,8 @@
   "minSupportedVersionCode": 1,
   "releaseDate": "2026-11-13",
   "apkUrl": "https://github.com/akshatverma-ai/netchat-website/releases/download/v1.0.9/Netchat.apk",
-  "apkSizeBytes": 15690864,
-  "sha256": "04C84C1AA549C9C29AE7E4927EDFB55F181A333251BE79E2155EC4F5C163F5F7",
-  "releaseNotes": "• Official Signed Release v1.0.9 (Build 10)\n• Incoming & Outgoing Message Alignment: Uses authenticated Firebase UID as the authoritative source of truth\n• Own messages appear on the RIGHT with vibrant gradient bubbles; peer messages appear on the LEFT with avatar and frosted white bubbles\n• Add to Contacts: Input placeholder clearly displays 'Contact name (e.g. Rahul)' when empty without pre-filling; dialog shows peer Gmail address\n• Chats Screen Background: Added subtle, lightweight floating animated bubbles behind the chat list with pastel pink, purple, and light blue palette\n• Zero data loss: Preserves all existing contacts, chat history, and sidebar auto-hide behavior",
+  "apkSizeBytes": 15707259,
+  "sha256": "2F09B7A70F8BD715F42CCC7EAA35F209E7745A6791C3D0D7615B36DF0AEEF390",
+  "releaseNotes": "• Official Signed Release v1.0.9 (Build 10)\n• In-App Updater Reliability: Automatic check on app launch & resume with direct streaming download\n• Incoming & Outgoing Message Alignment: Uses authenticated Firebase UID as the authoritative source of truth\n• Own messages appear on the RIGHT with vibrant gradient bubbles; peer messages appear on the LEFT with avatar and frosted white bubbles\n• Add to Contacts: Input placeholder clearly displays 'Contact name (e.g. Rahul)' when empty without pre-filling; dialog shows peer Gmail address\n• Chats Screen Background: Added subtle, lightweight floating animated bubbles behind the chat list with pastel pink, purple, and light blue palette\n• Zero data loss: Preserves all existing contacts, chat history, and sidebar auto-hide behavior",
   "isMandatory": false
 }
