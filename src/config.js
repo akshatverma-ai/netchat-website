@@ -4,7 +4,7 @@ export const appConfig = {
   subtitle: "Decentralized Peer-to-Peer & Mesh Messenger for Android",
   version: "1.0.9",
   versionCode: 10,
-  releaseDate: "November 12, 2026",
+  releaseDate: "November 13, 2026",
   apkSizeFormatted: "15.0 MB",
   apkSizeBytes: 15690864,
   minAndroid: "Android 8.0+ (API 26)",
