@@ -3,9 +3,9 @@
   "versionCode": 11,
   "minSupportedVersionCode": 1,
   "releaseDate": "2026-11-13",
-  "apkUrl": "https://github.com/akshatverma-ai/netchat-website/releases/download/v1.1.0/Netchat.apk",
-  "apkSizeBytes": 57199998,
-  "sha256": "DFF07CEA9EC0F8BC31ABF8042D15892EF3F9204C939B936EFFBAB2B09905F0A0",
-  "releaseNotes": "• Official Signed Release v1.1.0 (Build 11)\n• Real-Time Private Chat: WhatsApp-style real-time messaging between Google accounts\n• Real-Time Presence: Online/offline indicator and last seen timestamps\n• Real-Time Typing Indicator: Live 'typing...' status in chat header\n• Real Voice Calls: Full two-way audio calling powered by WebRTC with STUN NAT traversal\n• Real Video Calls: Two-way live video and audio streaming with PiP local camera preview, front/back camera switch, and mute/video controls\n• In-App Call History: Full logging of incoming, outgoing, and missed calls in the Calls tab\n• High-reliability In-App Updater with SHA-256 cryptographic verification and seamless package installer delivery",
+  "apkUrl": "https://netchatx.vercel.app/Netchat.apk",
+  "apkSizeBytes": 57789001,
+  "sha256": "A8E4F7F1952FBD0494D0494471C8D8FCD09A3011974496545223A92859549D32",
+  "releaseNotes": "• Official Release v1.1.0 (Build 11)\n• Real-Time Private Chat: WhatsApp-style real-time messaging between Google accounts\n• Real Voice Notes: Actual MediaRecorder capture, Firebase Storage upload & AudioPlayer streaming playback\n• Real Gallery Photos: Android Photo Picker, auto-compression, storage upload & full-screen photo viewer\n• Push Notifications: High-priority FCM background notifications for messages and calls\n• Real WebRTC Voice & Video Calls: Live audio/video streaming with STUN NAT traversal\n• Presence & Typing: Live online/offline status and real-time typing indicators\n• Clean Production: All mock and demo content completely removed",
   "isMandatory": false
 }
