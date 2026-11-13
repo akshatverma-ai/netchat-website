@@ -1,11 +1,11 @@
-{
-  "versionName": "1.0.9",
-  "versionCode": 10,
+﻿{
+  "versionName": "1.1.0",
+  "versionCode": 11,
   "minSupportedVersionCode": 1,
   "releaseDate": "2026-11-13",
-  "apkUrl": "https://github.com/akshatverma-ai/netchat-website/releases/download/v1.0.9/Netchat.apk",
-  "apkSizeBytes": 15707259,
-  "sha256": "2F09B7A70F8BD715F42CCC7EAA35F209E7745A6791C3D0D7615B36DF0AEEF390",
-  "releaseNotes": "• Official Signed Release v1.0.9 (Build 10)\n• In-App Updater Reliability: Automatic check on app launch & resume with direct streaming download\n• Incoming & Outgoing Message Alignment: Uses authenticated Firebase UID as the authoritative source of truth\n• Own messages appear on the RIGHT with vibrant gradient bubbles; peer messages appear on the LEFT with avatar and frosted white bubbles\n• Add to Contacts: Input placeholder clearly displays 'Contact name (e.g. Rahul)' when empty without pre-filling; dialog shows peer Gmail address\n• Chats Screen Background: Added subtle, lightweight floating animated bubbles behind the chat list with pastel pink, purple, and light blue palette\n• Zero data loss: Preserves all existing contacts, chat history, and sidebar auto-hide behavior",
+  "apkUrl": "https://github.com/akshatverma-ai/netchat-website/releases/download/v1.1.0/Netchat.apk",
+  "apkSizeBytes": 57199998,
+  "sha256": "DFF07CEA9EC0F8BC31ABF8042D15892EF3F9204C939B936EFFBAB2B09905F0A0",
+  "releaseNotes": "• Official Signed Release v1.1.0 (Build 11)\n• Real-Time Private Chat: WhatsApp-style real-time messaging between Google accounts\n• Real-Time Presence: Online/offline indicator and last seen timestamps\n• Real-Time Typing Indicator: Live 'typing...' status in chat header\n• Real Voice Calls: Full two-way audio calling powered by WebRTC with STUN NAT traversal\n• Real Video Calls: Two-way live video and audio streaming with PiP local camera preview, front/back camera switch, and mute/video controls\n• In-App Call History: Full logging of incoming, outgoing, and missed calls in the Calls tab\n• High-reliability In-App Updater with SHA-256 cryptographic verification and seamless package installer delivery",
   "isMandatory": false
 }
