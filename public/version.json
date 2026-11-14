@@ -1,11 +1,11 @@
 {
-  "versionName": "1.1.1",
-  "versionCode": 12,
+  "versionName": "1.1.2",
+  "versionCode": 13,
   "minSupportedVersionCode": 1,
   "releaseDate": "2026-11-14",
   "apkUrl": "https://netchatx.vercel.app/Netchat.apk",
-  "apkSizeBytes": 57789000,
-  "sha256": "3DCAC8CAFD1FFEFDBDBCB79F9E06DB3D971DEFBE45943A321C6346C4A72427F4",
-  "releaseNotes": "• Official Release v1.1.1 (Build 12)\n• Synchronized codebase across all branches and working trees\n• Real-Time Private Chat: WhatsApp-style instant messaging between verified Google accounts\n• Real Voice Notes: High-clarity audio recording, Firebase Storage streaming, and playback\n• Real Gallery Photos: Android Photo Picker, auto-compression, and full-screen viewer\n• Real WebRTC Voice & Video Calls: Live audio/video streaming with STUN NAT traversal\n• Presence & Typing: Live online/offline status and real-time typing indicators\n• Database v8 Forensic Safety: Verified SQLite schema migration with 100% data preservation",
+  "apkSizeBytes": 65482880,
+  "sha256": "8EDAB55233D76B93C39366C5191FBE3D50216C2BEFB044D1A994897A93AF9168",
+  "releaseNotes": "• Official Release v1.1.2 (Build 13)\n• WhatsApp-style instant messaging with immediate optimistic rendering and async sync\n• SQLite database v9 schema migration with automatic demo data purging\n• WhatsApp-style push-to-talk voice notes with live amplitude waveform visualizer and cancel slider\n• Dynamic attachment '+' menu with Gallery Photos, Videos, Camera, Documents, and Location\n• Quoted message replies with preview banner and scroll-to-original navigation\n• Message long-press actions: Reply, Copy, Forward, Delete for me, and Delete for everyone\n• Chat header 3-dot menu: View contact, Search conversation, Mute, Clear chat, and Delete conversation\n• Smooth soft keyboard handling with multiline composer and auto-scroll",
   "isMandatory": false
 }
