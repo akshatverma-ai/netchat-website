@@ -1,11 +1,11 @@
-﻿{
-  "versionName": "1.1.0",
-  "versionCode": 11,
+{
+  "versionName": "1.1.1",
+  "versionCode": 12,
   "minSupportedVersionCode": 1,
-  "releaseDate": "2026-11-13",
+  "releaseDate": "2026-11-14",
   "apkUrl": "https://netchatx.vercel.app/Netchat.apk",
-  "apkSizeBytes": 57789001,
-  "sha256": "A8E4F7F1952FBD0494D0494471C8D8FCD09A3011974496545223A92859549D32",
-  "releaseNotes": "• Official Release v1.1.0 (Build 11)\n• Real-Time Private Chat: WhatsApp-style real-time messaging between Google accounts\n• Real Voice Notes: Actual MediaRecorder capture, Firebase Storage upload & AudioPlayer streaming playback\n• Real Gallery Photos: Android Photo Picker, auto-compression, storage upload & full-screen photo viewer\n• Push Notifications: High-priority FCM background notifications for messages and calls\n• Real WebRTC Voice & Video Calls: Live audio/video streaming with STUN NAT traversal\n• Presence & Typing: Live online/offline status and real-time typing indicators\n• Clean Production: All mock and demo content completely removed",
+  "apkSizeBytes": 57789000,
+  "sha256": "3DCAC8CAFD1FFEFDBDBCB79F9E06DB3D971DEFBE45943A321C6346C4A72427F4",
+  "releaseNotes": "• Official Release v1.1.1 (Build 12)\n• Synchronized codebase across all branches and working trees\n• Real-Time Private Chat: WhatsApp-style instant messaging between verified Google accounts\n• Real Voice Notes: High-clarity audio recording, Firebase Storage streaming, and playback\n• Real Gallery Photos: Android Photo Picker, auto-compression, and full-screen viewer\n• Real WebRTC Voice & Video Calls: Live audio/video streaming with STUN NAT traversal\n• Presence & Typing: Live online/offline status and real-time typing indicators\n• Database v8 Forensic Safety: Verified SQLite schema migration with 100% data preservation",
   "isMandatory": false
 }
