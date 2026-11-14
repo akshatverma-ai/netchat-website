@@ -17,9 +17,7 @@ dist-ssr/
 google-services.json
 
 # Binary APKs and application bundles
-*.apk
 *.aab
-public/*.apk
 dist/*.apk
 
 # Editor directories and files

@@ -2,11 +2,11 @@
   appName: "Netchat",
   tagline: "Messaging beyond ordinary connectivity.",
   subtitle: "Decentralized Peer-to-Peer & Mesh Messenger for Android",
-  version: "1.1.0",
-  versionCode: 11,
-  releaseDate: "November 13, 2026",
-  apkSizeFormatted: "54.5 MB",
-  apkSizeBytes: 57199998,
+  version: "1.1.2",
+  versionCode: 13,
+  releaseDate: "November 14, 2026",
+  apkSizeFormatted: "62.4 MB",
+  apkSizeBytes: 65482880,
   minAndroid: "Android 8.0+ (API 26)",
   targetAndroid: "Android 15 (API 35)",
   packageName: "com.netchat.app",
@@ -15,7 +15,7 @@
   download: {
     // Configurable official release download
     isReleaseReady: true,
-    apkUrl: "https://github.com/akshatverma-ai/netchat-website/releases/download/v1.1.0/Netchat.apk",
+    apkUrl: "/Netchat.apk",
     filename: "Netchat.apk",
     notReadyMessage: "The official release APK is currently being prepared. Check back shortly."
   },
