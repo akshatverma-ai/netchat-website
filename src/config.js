@@ -1,12 +1,12 @@
-﻿export const appConfig = {
+export const appConfig = {
   appName: "Netchat",
   tagline: "Messaging beyond ordinary connectivity.",
   subtitle: "Decentralized Peer-to-Peer & Mesh Messenger for Android",
-  version: "1.1.2",
-  versionCode: 13,
-  releaseDate: "November 14, 2026",
+  version: "1.1.3",
+  versionCode: 14,
+  releaseDate: "November 15, 2026",
   apkSizeFormatted: "62.4 MB",
-  apkSizeBytes: 65482880,
+  apkSizeBytes: 65382551,
   minAndroid: "Android 8.0+ (API 26)",
   targetAndroid: "Android 15 (API 35)",
   packageName: "com.netchat.app",

@@ -1,11 +1,11 @@
 {
-  "versionName": "1.1.2",
-  "versionCode": 13,
+  "versionName": "1.1.3",
+  "versionCode": 14,
   "minSupportedVersionCode": 1,
-  "releaseDate": "2026-11-14",
+  "releaseDate": "2026-11-15",
   "apkUrl": "https://netchatx.vercel.app/Netchat.apk",
-  "apkSizeBytes": 65482880,
-  "sha256": "8EDAB55233D76B93C39366C5191FBE3D50216C2BEFB044D1A994897A93AF9168",
-  "releaseNotes": "• Official Release v1.1.2 (Build 13)\n• WhatsApp-style instant messaging with immediate optimistic rendering and async sync\n• SQLite database v9 schema migration with automatic demo data purging\n• WhatsApp-style push-to-talk voice notes with live amplitude waveform visualizer and cancel slider\n• Dynamic attachment '+' menu with Gallery Photos, Videos, Camera, Documents, and Location\n• Quoted message replies with preview banner and scroll-to-original navigation\n• Message long-press actions: Reply, Copy, Forward, Delete for me, and Delete for everyone\n• Chat header 3-dot menu: View contact, Search conversation, Mute, Clear chat, and Delete conversation\n• Smooth soft keyboard handling with multiline composer and auto-scroll",
+  "apkSizeBytes": 65382551,
+  "sha256": "52755FB7238F1BCF1A18C2A7B24A19F7EFBD1AC01C4F0D1F937433B4713A4791",
+  "releaseNotes": "• Official Release v1.1.3 (Build 14)\n• WhatsApp-style chat list selection toolbar: Pin to top, Mute with custom duration, Archive, and Delete locally\n• Mute notifications suppression for muted conversations\n• Right-swipe gesture on message bubbles to reply with animated arrow and haptic trigger\n• Two-tier message deletion: 'Delete for me' (local SQLite) and 'Delete for everyone' (remote tombstone)\n• Full-screen interactive photo viewer with pinch-to-zoom, pan, save to Pictures, and share\n• Real document & PDF sharing, download manager, and FileProvider external app opening\n• Complete cleanup and removal of legacy location coordinates\n• Non-destructive SQLite schema v10 database migration",
   "isMandatory": false
 }
