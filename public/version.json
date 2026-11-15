@@ -1,11 +1,11 @@
 {
-  "versionName": "1.1.3",
-  "versionCode": 14,
+  "versionName": "1.1.4",
+  "versionCode": 15,
   "minSupportedVersionCode": 1,
   "releaseDate": "2026-11-15",
   "apkUrl": "https://netchatx.vercel.app/Netchat.apk",
-  "apkSizeBytes": 65382551,
-  "sha256": "52755FB7238F1BCF1A18C2A7B24A19F7EFBD1AC01C4F0D1F937433B4713A4791",
-  "releaseNotes": "• Official Release v1.1.3 (Build 14)\n• WhatsApp-style chat list selection toolbar: Pin to top, Mute with custom duration, Archive, and Delete locally\n• Mute notifications suppression for muted conversations\n• Right-swipe gesture on message bubbles to reply with animated arrow and haptic trigger\n• Two-tier message deletion: 'Delete for me' (local SQLite) and 'Delete for everyone' (remote tombstone)\n• Full-screen interactive photo viewer with pinch-to-zoom, pan, save to Pictures, and share\n• Real document & PDF sharing, download manager, and FileProvider external app opening\n• Complete cleanup and removal of legacy location coordinates\n• Non-destructive SQLite schema v10 database migration",
+  "apkSizeBytes": 67699451,
+  "sha256": "F493B4DC1F56D20D259ADF2EB32D2653FFFB6BC9CB37F15D0E1979312FD59D2B",
+  "releaseNotes": "• Official Release v1.1.4 (Build 15)\n• Real camera capture with secure FileProvider, camera permission check, and preview before send (Retake, Cancel, Send)\n• Real video sharing with video picker, duration & size extraction, and preview dialog\n• Real full-screen video player using Android Media3 ExoPlayer with Play/Pause, scrubbable seekbar, elapsed/duration time, mute toggle, buffering spinner, error retry, and save to Movies/Netchat\n• Media gallery download saving photos to Pictures/Netchat and videos to Movies/Netchat\n• Profile photo management with photo picker, camera capture, full-screen viewer, and removal with fallback to account letter initial\n• Non-destructive SQLite schema v11 database migration",
   "isMandatory": false
 }
