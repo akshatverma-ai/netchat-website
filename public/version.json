@@ -1,11 +1,11 @@
 {
-  "versionName": "1.1.4",
-  "versionCode": 15,
+  "versionName": "1.1.5",
+  "versionCode": 16,
   "minSupportedVersionCode": 1,
   "releaseDate": "2026-11-15",
   "apkUrl": "https://netchatx.vercel.app/Netchat.apk",
-  "apkSizeBytes": 67699451,
-  "sha256": "F493B4DC1F56D20D259ADF2EB32D2653FFFB6BC9CB37F15D0E1979312FD59D2B",
-  "releaseNotes": "• Official Release v1.1.4 (Build 15)\n• Real camera capture with secure FileProvider, camera permission check, and preview before send (Retake, Cancel, Send)\n• Real video sharing with video picker, duration & size extraction, and preview dialog\n• Real full-screen video player using Android Media3 ExoPlayer with Play/Pause, scrubbable seekbar, elapsed/duration time, mute toggle, buffering spinner, error retry, and save to Movies/Netchat\n• Media gallery download saving photos to Pictures/Netchat and videos to Movies/Netchat\n• Profile photo management with photo picker, camera capture, full-screen viewer, and removal with fallback to account letter initial\n• Non-destructive SQLite schema v11 database migration",
+  "apkSizeBytes": 67715918,
+  "sha256": "5F393A5B55A60F266BAA67E98E788796307A56EC1687FF2AAFE9C78DD23CB0D3",
+  "releaseNotes": "• Official Release v1.1.5 (Build 16)\n• Real WebRTC Internet Voice & Video Calling with STUN and TURN (UDP, TCP, TLS)\n• Thread-safe ICE candidate queuing preventing early candidate discard\n• Foreground CallService keeping audio and camera active when backgrounded or locked\n• Modern Android 12+ audio routing with earpiece and speakerphone switching\n• Interactive video call with full-screen remote video and local PiP camera preview\n• Genuine contact avatar rendering with profile photo support\n• 45-second auto-ringing timeout and receiver UID resolution",
   "isMandatory": false
 }
