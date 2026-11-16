@@ -1,11 +1,11 @@
 {
-  "versionName": "1.1.5",
-  "versionCode": 16,
+  "versionName": "1.1.6",
+  "versionCode": 17,
   "minSupportedVersionCode": 1,
-  "releaseDate": "2026-11-15",
+  "releaseDate": "2026-11-16",
   "apkUrl": "https://netchatx.vercel.app/Netchat.apk",
-  "apkSizeBytes": 67715918,
-  "sha256": "5F393A5B55A60F266BAA67E98E788796307A56EC1687FF2AAFE9C78DD23CB0D3",
-  "releaseNotes": "• Official Release v1.1.5 (Build 16)\n• Real WebRTC Internet Voice & Video Calling with STUN and TURN (UDP, TCP, TLS)\n• Thread-safe ICE candidate queuing preventing early candidate discard\n• Foreground CallService keeping audio and camera active when backgrounded or locked\n• Modern Android 12+ audio routing with earpiece and speakerphone switching\n• Interactive video call with full-screen remote video and local PiP camera preview\n• Genuine contact avatar rendering with profile photo support\n• 45-second auto-ringing timeout and receiver UID resolution",
+  "apkSizeBytes": 67732313,
+  "sha256": "0E5D2FEB92116216FCC79384C8041AEFDC6A58014F9746634DD36688852D9D0B",
+  "releaseNotes": "• Official Release v1.1.6 (Build 17)\n• Instant Voice & Video Call button tap responsiveness with immediate CallScreen rendering\n• Robust recipient UID resolution with email lookup fallback\n• Informative feedback toasts for unauthenticated or unregistered peer calls\n• Header touch target stabilization on conversation screens\n• WhatsApp-style Voice and Video call quick actions in Chats list selection toolbar\n• Real WebRTC P2P Voice and Video calling engine with STUN and TURN support",
   "isMandatory": false
 }
