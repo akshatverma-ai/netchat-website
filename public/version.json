@@ -1,11 +1,11 @@
 {
-  "versionName": "1.1.9",
-  "versionCode": 20,
+  "versionName": "1.2.0",
+  "versionCode": 21,
   "minSupportedVersionCode": 1,
-  "releaseDate": "2026-11-19",
+  "releaseDate": "2026-11-20",
   "apkUrl": "https://netchatx.vercel.app/Netchat.apk",
-  "apkSizeBytes": 68178188,
-  "sha256": "04C86A162BC17EEC91755CDA1C807E3E99673790F3DD42BEA45C0579795A15C7",
-  "releaseNotes": "• Official Release v1.1.9 (Build 20)\n• Complete Cloudflare R2 Media Storage Migration (Photos, Videos, Voice Notes, Documents)\n• Live Firestore Chat Document Authorization with multi-participant verification\n• Strict Bearer Token Security with zero URL token leakage\n• WebRTC Voice & Video Calling with resilient reconnect and late SDP buffering\n• Persistent WorkManager Outbox Retry Engine with crash recovery\n• Background Push Notifications & Multi-Device FCM Isolation",
+  "apkSizeBytes": 68178204,
+  "sha256": "07A09DDDA1E9B1A30921D84E5B885C5C067CD3C3A2FFE021A9E8CEF66FA83041",
+  "releaseNotes": "• Official Release v1.2.0 (Build 21)\n• Supabase Storage Free Media Backend (Photos, Videos, Voice Notes, Documents)\n• Live Supabase Edge Function Deployment with Google JWKS Token Verification\n• Multi-Participant Live Firestore Chat Authorization\n• Strict Authorization Bearer Transport\n• WebRTC Voice & Video Calling\n• Persistent Outbox Retry Engine with SQLite Storage Guard\n• Multi-Device Push Relay & Zero Paid Tier / ₹0 Spark Forever",
   "isMandatory": false
 }
