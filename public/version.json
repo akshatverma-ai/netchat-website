@@ -1,11 +1,11 @@
 {
-  "versionName": "1.1.7",
-  "versionCode": 18,
+  "versionName": "1.1.9",
+  "versionCode": 20,
   "minSupportedVersionCode": 1,
-  "releaseDate": "2026-11-18",
+  "releaseDate": "2026-11-19",
   "apkUrl": "https://netchatx.vercel.app/Netchat.apk",
-  "apkSizeBytes": 68161806,
-  "sha256": "B91C10E1049D7D5EE7DC56A191B36584EB129E98AC67550CBC08321550D4F294",
-  "releaseNotes": "• Official Release v1.1.7 (Build 18)\n• Concurrency-Safe Cloudflare Durable Objects FCM Push Relay\n• Persistent WorkManager Outbox Retry Engine with crash consistency\n• Multi-Device FCM Token Isolation with secure sign-out cleanup\n• Android 13+ Runtime Notification Permissions with non-nagging policy\n• Full WebRTC Calling with SDP offer/answer & ICE candidate buffering\n• Media messaging compatibility with empty caption support",
+  "apkSizeBytes": 68178188,
+  "sha256": "04C86A162BC17EEC91755CDA1C807E3E99673790F3DD42BEA45C0579795A15C7",
+  "releaseNotes": "• Official Release v1.1.9 (Build 20)\n• Complete Cloudflare R2 Media Storage Migration (Photos, Videos, Voice Notes, Documents)\n• Live Firestore Chat Document Authorization with multi-participant verification\n• Strict Bearer Token Security with zero URL token leakage\n• WebRTC Voice & Video Calling with resilient reconnect and late SDP buffering\n• Persistent WorkManager Outbox Retry Engine with crash recovery\n• Background Push Notifications & Multi-Device FCM Isolation",
   "isMandatory": false
 }
